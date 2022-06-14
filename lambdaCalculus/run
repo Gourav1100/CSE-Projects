@@ -1,0 +1,10 @@
+clear
+flex *.l
+clear
+bison -dy *.y
+clear
+gcc lex.yy.c y.tab.c -o ./out
+clear
+./out
+clear
+nano ./main.c
